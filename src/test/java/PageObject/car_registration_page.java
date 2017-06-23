@@ -7,15 +7,10 @@ import org.openqa.selenium.WebElement;
 
 import Utility.Driver_Manager;
 
-public class car_registration_page {
+public class car_registration_page extends Driver_Manager{
 
-	WebDriver driver;
 
-	public car_registration_page() {
-		this.driver = Driver_Manager.driver;
-	}
-
-	By start_now_button = By.id("get-started");
+	By start_now_button = By.cssSelector(".button");
 	By Reg_textfield = By.id("Vrm");
 	By Continue_button = By.name("Continue");
 	By Reg_Number = By.cssSelector(".reg-mark");

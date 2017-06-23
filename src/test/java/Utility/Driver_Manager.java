@@ -8,7 +8,7 @@ public class Driver_Manager {
 	
 	public static WebDriver driver;
 
-	public void set_driver(String browser) {
+	public void use_driver(String browser) {
 		if (driver == null) {
 			if (browser.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver", "C:\\Drivers\\geckodriver.exe");
